@@ -1,7 +1,7 @@
 
 
-train: ./Data/images/train  # train images (relative to 'path') 118287 images
-val: ./Data/images/validation  # val images (relative to 'path') 5000 images
+train: ./train_data/images/train  # train images (relative to 'path') 118287 images
+val: ./train_data/images/validation  # val images (relative to 'path') 5000 images
 
 
 # Classes
