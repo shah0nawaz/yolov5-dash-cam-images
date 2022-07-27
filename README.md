@@ -1,6 +1,14 @@
 # yolov5-dash-cam-images
 # Introduction
 The goal of this project was to detect four types of object (Car, Truck, Stop-Sign, Traffic-Light) in dash cam images. Technically, the underline aim of this repository is to optimizer the state of the art object detection algorithms on dash cam images. This repository uses the most accuracte architecture of yolov5x for this purpose. The discription of the data can be seen at https://aiconnect.gomotive.com/aichallenge/. 
+# Clone the Repository & install the libaries
+```
+git clone https://github.com/shah0nawaz/yolov5-dash-cam-images.git
+cd yolov5-dash-cam-images
+pip install -r requirements.txt
+wget https://github.com/ultralytics/yolov5/releases/download/v2.0/yolov5x.pt
+```
+
 # Training Data
 The training data consists of 40,000 labled training images and 7,000 unlabled testing images. The data can be downloaded from the https://drive.google.com/drive/folders/1R0IdV3EfhY2GHf6vEQU_0BZwuSveqZ3q. The data floder contains the following directories and files.
 data
@@ -35,7 +43,7 @@ python coco_yolo.py path_to/train_gt.json path_to/annotations
 ```
 Now create a directory for training data
 ```
-  train_data
+  yolov5/train_data
     -- train
       -- images
       -- labels
@@ -50,5 +58,20 @@ python train_val_split.py path_extracted_images/ path_yolo_formate_annotations/ 
 ```
 
 
-# Training yolov5x for Dash cam Images Competition
+# Training yolov5x for Dash cam Images
+```
+
+train: ./train_data/images/train  
+val: ./train_data/images/validation  
+
+
+# Classes
+nc: 4  # number of classes
+names: ["Car", "Truck", "Stop-Sign", "Traffic-Light"]  # class names
+
+```
+```
+python train.py python train.py --data dash-cam-images.yaml --cfg yolov5x-dashcam.yaml --weights '' --batch-size devices 0,1
+
+```
 # Testing and Validation Results
