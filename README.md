@@ -59,6 +59,7 @@ python train_val_split.py path_extracted_images/ path_yolo_formate_annotations/ 
 
 
 # Training yolov5x for Dash cam Images
+The dash-cam-images.yaml should look line below
 ```
 
 train: ./train_data/images/train  
@@ -70,6 +71,7 @@ nc: 4  # number of classes
 names: ["Car", "Truck", "Stop-Sign", "Traffic-Light"]  # class names
 
 ```
+Run the following command to start training
 ```
 python train.py python train.py --data dash-cam-images.yaml --cfg yolov5x-dashcam.yaml --weights '' --batch-size devices 0,1
 
