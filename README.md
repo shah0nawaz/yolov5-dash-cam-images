@@ -34,6 +34,18 @@ first creat a folder named 'annotations' in the directory where the train_gt.jso
 python coco_yolo.py path_to/train_gt.json path_to/annotations
 
 ```
+Now create a directory for training data
+  train_data
+    -- train
+      -- images
+      -- labels
+    -- val
+      -- images
+      -- labels
+Run the following command from the ./data/script/train_val_split.py
+```
+python train_val_split.py path_extracted_images/ path_yolo_formate_annotations/ path_to/train_data/train path_to/train_data/val 0.8 0.2
+```
 
 
 # Training yolov5x for Dash cam Images Competition
