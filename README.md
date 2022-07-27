@@ -20,6 +20,13 @@ data
 ```
 # Preparing Data
 Firstly, download all the files and folders the run the commands in the  in the unzip commands.txt files to extract the images.
+
+```
+zip -F train_images.zip --out single_file.zip
+unzip single_file.zip
+
+```
+
 This will create train_images folder, which will contain all of the training images. 
 For annotations train_gt.json file is given which contains the annotation of all the files in the training images in coco format.
 # Training yolov5x for Dash cam Images Competition
