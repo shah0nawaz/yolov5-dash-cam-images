@@ -27,7 +27,14 @@ unzip single_file.zip
 
 ```
 
-This will create train_images folder, which will contain all of the training images. 
-For annotations train_gt.json file is given which contains the annotation of all the files in the training images in coco format.
+This will create train_images folder, which contains all of the training images. 
+For annotations train_gt.json file is given which contains the annotation of all the files in the training images in coco format.In order to convert annotations from coco to yolo format, here is the format procedure:
+first creat a folder named 'annotations' in the directory where the train_gt.json exists. Now go to the ./data/scripts folder and run the following command.
+```
+python coco_yolo.py path_to_train_gt.json path_to_annotations folder
+
+```
+
+
 # Training yolov5x for Dash cam Images Competition
 # Testing and Validation Results
