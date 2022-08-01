@@ -2,6 +2,7 @@
 """
 Run inference on images, videos, directories, streams, etc.
 
+# 
 Usage - sources:
     $ python path/to/detect.py --weights yolov5s.pt --source 0              # webcam
                                                              img.jpg        # image
