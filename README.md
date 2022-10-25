@@ -77,3 +77,10 @@ python train.py python train.py --data dash-cam-images.yaml --cfg yolov5x-dashca
 
 ```
 # Testing and Validation Results
+
+
+## Validation Results
+Confusion Matrix             |  P Curve
+:-------------------------:|:-------------------------:
+![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/diagrams/confusion_matrix.png)  |  ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/diagrams/P_curve.png)
+
