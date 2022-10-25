@@ -88,9 +88,6 @@ PR Curve            |  R Curve
 :-------------------------:|:-------------------------:
 ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/PR_curve.png)  |  ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/R_curve.png)
 
-
-### F1 Score
-
 ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/F1_score.png)
 
 
