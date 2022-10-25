@@ -84,3 +84,8 @@ Confusion Matrix             |  P Curve
 :-------------------------:|:-------------------------:
 ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/confusion_matrix.png)  |  ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/P_curve.png)
 
+## Validation Results
+PR Curve            |  R Curve
+:-------------------------:|:-------------------------:
+![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/PR_curve.png)  |  ![alt text](https://github.com/shah0nawaz/yolov5-dash-cam-images/blob/main/runs/val/R_curve.png)
+
